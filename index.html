@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Capital - Your Trusted Financial Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-primary fixed w-full z-10 shadow-2xl">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-2">
+          <div class="flex items-center space-x-4">
+            <img
+              src="Images/SC White.png"
+              class="h-14 object-contain"
+              alt="Logo"
+            />
+            <img
+              src="Images/Shree Capital White.png"
+              class="h-10 object-contain"
+              alt="Logo"
+            />
+          </div>
+          <!-- <div class="text-white text-2xl font-bold">Shree Capital</div> -->
+          <!-- Mobile menu button -->
+          <div class="flex items-center space-x-6">
+            <button class="md:hidden text-white" onclick="toggleMenu()">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-16 6h16"
+                ></path>
+              </svg>
+            </button>
+            <!-- Mobile menu -->
+            <div
+              id="mobileMenu"
+              class="hidden fixed top-16 left-0 right-0 bg-primary p-4 md:hidden !m-0 text-xl"
+            >
+              <div class="flex flex-col space-y-6 justify-center items-center">
+                <a
+                  href="#home"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Home</a
+                >
+                <a
+                  href="#services"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Services</a
+                >
+                <a
+                  href="#products"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Products</a
+                >
+                <a
+                  href="#partners"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Partners</a
+                >
+                <!-- <a
+                  href="#why-us"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Why Us</a
+                >
+                <a
+                  href="#team"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Team</a
+                >
+                <a
+                  href="#commitment"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >Commitment</a
+                > -->
+                <a
+                  href="#about"
+                  class="text-white hover:text-secondary"
+                  onclick="toggleMenu()"
+                  >About Us</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Desktop menu -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-white nav-link-underline">Home</a>
+            <a href="#services" class="text-white nav-link-underline"
+              >Services</a
+            >
+            <a href="#products" class="text-white nav-link-underline"
+              >Products</a
+            >
+            <a href="#partners" class="text-white nav-link-underline"
+              >Partners</a
+            >
+            <!-- <a href="#why-us" class="text-white hover:text-secondary">Why Us</a>
+            <a href="#team" class="text-white hover:text-secondary">Team</a>
+            <a href="#commitment" class="text-white hover:text-secondary"
+              >Commitment</a
+            > -->
+            <a href="#about" class="text-white nav-link-underline">About Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative bg-primary text-white pt-16 h-[50vh] md:h-[85vh] flex items-center"
+    >
+      <div
+        class="absolute inset-0 bg-cover bg-right-top mt-16"
+        style="background-image: url('Images/HeaderImage2.png'); opacity: 0.2"
+      ></div>
+      <div class="relative container mx-auto px-4 py-32">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Your Financial Bridge <br />to Success
+          </h1>
+          <p class="text-xl mb-8">
+            Get quick and hassle-free loans for all your needs
+          </p>
+          <!-- <a
+            href="#contact"
+            class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition animate-pulse-slow inline-block"
+            >Apply Now</a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+          Our Loan Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg card-hover scroll-animate"
+          >
+            <h3 class="text-xl font-semibold mb-4">Personal Loans</h3>
+            <p>
+              Quick personal loans with minimal documentation and competitive
+              interest rates.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg card-hover scroll-animate"
+          >
+            <h3 class="text-xl font-semibold mb-4">Business Loans</h3>
+            <p>
+              Grow your business with our flexible business loan options and
+              expert guidance.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg card-hover scroll-animate"
+          >
+            <h3 class="text-xl font-semibold mb-4">Home Loans</h3>
+            <p>
+              Make your dream home a reality with our affordable home loan
+              solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loan Products Section -->
+    <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+          Loan Products
+        </h2>
+
+        <!-- Unsecured Loans -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold mb-6 text-primary">
+            Unsecured Loans
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Business Loan</h4>
+              <p class="text-gray-600">
+                Without any security property and collateral
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">
+                Flexi Overdraft Facility
+              </h4>
+              <p class="text-gray-600">
+                Without any security property and collateral
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Personal Loan</h4>
+              <p class="text-gray-600">
+                Quick and hassle-free personal financing
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secured Loans -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-primary">
+            Secured Loans
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Home Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Cash Credit (CC)</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Commercial Purchase</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Bill Discounting</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Mortgage Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Car Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Used Car Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Education Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Gold Loan</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Loan Against Property</h4>
+            </div>
+            <div
+              class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition card-hover scroll-animate"
+            >
+              <h4 class="text-xl font-semibold mb-3">Loan Against Security</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Channel Partners Section -->
+    <section id="partners" class="py-20">
+      <div class="mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+          Channel Partners
+        </h2>
+        <div class="partners-container">
+          <div class="partners-track" id="partnerTrack">
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/aditya-birla.jpg"
+                  class="h-32 object-contain"
+                  alt="Aditya Birla"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/AMBIT.jpg"
+                  class="h-32 object-contain"
+                  alt="AMBIT"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/ASHV.jpg"
+                  class="h-32 object-contain"
+                  alt="ASHV"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/axisb.jpg"
+                  class="h-32 object-contain"
+                  alt="axisb"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/axisf.jpg"
+                  class="h-32 object-contain"
+                  alt="axisf"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/bajaj.jpg"
+                  class="h-32 object-contain"
+                  alt="bajaj"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/bob.jpg"
+                  class="h-32 object-contain"
+                  alt="bob"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/boi.jpg"
+                  class="h-32 object-contain"
+                  alt="boi"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Chola.jpg"
+                  class="h-32 object-contain"
+                  alt="Chola"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Clix-Capital.jpg"
+                  class="h-32 object-contain"
+                  alt="Clix-Capital"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Credit-Saison.jpg"
+                  class="h-32 object-contain"
+                  alt="Credit-Saison"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/csb.jpg"
+                  class="h-32 object-contain"
+                  alt="csb"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/dbs.jpg"
+                  class="h-32 object-contain"
+                  alt="dbs"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/dcb.jpg"
+                  class="h-32 object-contain"
+                  alt="dcb"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/deutschebank.jpg"
+                  class="h-32 object-contain"
+                  alt="deutschebank"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Edelweiss.jpg"
+                  class="h-32 object-contain"
+                  alt="Edelweiss"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/federal.jpg"
+                  class="h-32 object-contain"
+                  alt="federal"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Fullerton-India.jpg"
+                  class="h-32 object-contain"
+                  alt="Fullerton-India"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Godrej-Capital.jpg"
+                  class="h-32 object-contain"
+                  alt="Godrej-Capital"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Growth-Source.jpg"
+                  class="h-32 object-contain"
+                  alt="Growth-Source"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/hdfcb.jpg"
+                  class="h-32 object-contain"
+                  alt="hdfcb"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Hero-fin-crop.jpg"
+                  class="h-32 object-contain"
+                  alt="Hero-fin-crop"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/icici.jpg"
+                  class="h-32 object-contain"
+                  alt="icici"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/idbib.jpg"
+                  class="h-32 object-contain"
+                  alt="idbib"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/idfc.jpg"
+                  class="h-32 object-contain"
+                  alt="idfc"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/IIFL-FINANCE.jpg"
+                  class="h-32 object-contain"
+                  alt="IIFL-FINANCE"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Indi-trade.jpg"
+                  class="h-32 object-contain"
+                  alt="Indi-trade"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Indusland-Bank.jpg"
+                  class="h-32 object-contain"
+                  alt="Indusland-Bank"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/kotak.jpg"
+                  class="h-32 object-contain"
+                  alt="Kotak"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/L-T-Finance.jpg"
+                  class="h-32 object-contain"
+                  alt="L-T Finance"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Lending-Kart.jpg"
+                  class="h-32 object-contain"
+                  alt="Lending Kart"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Loan-Wired.jpg"
+                  class="h-32 object-contain"
+                  alt="Loan Wired"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/lt.jpg"
+                  class="h-32 object-contain"
+                  alt="LT"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Mahindra-Finance.jpg"
+                  class="h-32 object-contain"
+                  alt="Mahindra Finance"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Mangal.jpg"
+                  class="h-32 object-contain"
+                  alt="Mangal"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Mas.jpg"
+                  class="h-32 object-contain"
+                  alt="Mas"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Neo-Growth.jpg"
+                  class="h-32 object-contain"
+                  alt="Neo Growth"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Piramal-Finace.jpg"
+                  class="h-32 object-contain"
+                  alt="Piramal Finance"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Poonawalla-Fincrop.jpg"
+                  class="h-32 object-contain"
+                  alt="Poonawalla Fincorp"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/sbi.jpg"
+                  class="h-32 object-contain"
+                  alt="SBI"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/scb.jpg"
+                  class="h-32 object-contain"
+                  alt="SCB"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Shriram.jpg"
+                  class="h-32 object-contain"
+                  alt="Shriram"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/SMC.jpg"
+                  class="h-32 object-contain"
+                  alt="SMC"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/SME.jpg"
+                  class="h-32 object-contain"
+                  alt="SME"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/TataC.jpg"
+                  class="h-32 object-contain"
+                  alt="Tata Capital"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/UGRO-Capital.jpg"
+                  class="h-32 object-contain"
+                  alt="UGRO Capital"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/union-bank.jpg"
+                  class="h-32 object-contain"
+                  alt="Union Bank"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/Unity.jpg"
+                  class="h-32 object-contain"
+                  alt="Unity Bank"
+                />
+              </div>
+            </div>
+            <div class="partner-item">
+              <div
+                class="p-1 rounded-lg shadow hover:shadow-lg transition card-hover flex items-center justify-center"
+              >
+                <img
+                  src="Images/logos/yesbank.jpg"
+                  class="h-32 object-contain"
+                  alt="Yes Bank"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Shree Capital Section -->
+    <section id="why-us" class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+              Why Choose Shree Capital?
+            </h2>
+            <p class="mb-4">
+              Choosing Shree Capital means partnering with a team that’s
+              dedicated to your financial growth. With us, you receive more than
+              just a service — you gain a long-term financial ally.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Expertise:</strong> Decades of industry experience
+                across personal, business, and mortgage finance.
+              </li>
+              <li>
+                <strong>Comprehensive Solutions:</strong> From housing loans to
+                business funding, we provide end-to-end support.
+              </li>
+              <li>
+                <strong>Tailored Approach:</strong> Financial plans customized
+                to meet your unique needs and goals.
+              </li>
+              <li>
+                <strong>Trust & Transparency:</strong> Proven track record with
+                honest, client-first service.
+              </li>
+              <li>
+                <strong>Innovation:</strong> Modern tools and agile processes to
+                serve you better, faster.
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/2 md:pl-12 hidden md:block">
+            <img
+              src="Images/WhyUs.png"
+              alt="Why Choose Us"
+              class="rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 hidden md:block">
+            <img src="Images/OurTeam.png" alt="Our Team" class="rounded-lg" />
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+              Our Team
+            </h2>
+            <p class="mb-4">
+              At the core of Shree Capital is a passionate team of financial
+              professionals dedicated to helping you achieve financial clarity
+              and growth.
+            </p>
+            <p>
+              With deep industry expertise and a client-first mindset, our
+              advisors don't just offer financial solutions — they build lasting
+              relationships grounded in trust and care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Commitment Section -->
+    <section id="commitment" class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+              Our Commitment
+            </h2>
+            <p class="mb-4">
+              We believe every financial journey is unique. That’s why we are
+              committed to providing personalized strategies that reflect your
+              values and long-term aspirations.
+            </p>
+            <p>
+              Whether you’re an individual or a business, our promise is to
+              stand by you with integrity, dedication, and a relentless focus on
+              your success.
+            </p>
+          </div>
+          <div class="md:w-1/2 md:pl-12 hidden md:block">
+            <img
+              src="Images/OurCommitment.png"
+              alt="Our Commitment"
+              class="rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="hidden md:block md:w-1/2 mb-8 md:mb-0">
+            <img src="Images/SC.png" alt="About Us" class="rounded-lg" />
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">
+              About Shree Capital
+            </h2>
+            <p class="mb-4">
+              With years of experience in the financial sector, Shree Capital
+              has been helping individuals and businesses achieve their
+              financial goals through our comprehensive loan solutions.
+            </p>
+            <p>
+              We pride ourselves on our quick processing, transparent
+              procedures, and customer-centric approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0 text-center md:text-left">
+            <h3 class="text-xl font-bold">Shree Capital</h3>
+            <p>Your Trusted Financial Partner</p>
+          </div>
+          <div class="text-center md:text-right">
+            <p>© 2025 Shree Capital. All rights reserved.</p>
+            <p>Contact: info@shreecapital.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+
+      // Scroll Animation
+      function handleScrollAnimation() {
+        const elements = document.querySelectorAll(".scroll-animate");
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (elementTop < windowHeight * 0.75) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // Initial check
+      handleScrollAnimation();
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScrollAnimation);
+    </script>
+  </body>
+  <script>
+    const track = document.getElementById("partnerTrack");
+    track.innerHTML += track.innerHTML; // Duplicates the 49 items
+  </script>
+</html>
